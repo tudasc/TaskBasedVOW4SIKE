@@ -1,4 +1,4 @@
-# vOW4SIKE miniApp
+# vOW4SIKE: Task-based Implementation
 
 Implementation accompanies the paper titled "Task-based Parallelization Approach for Attacking the Supersingular Isogeny Path Problem".
 Our implementation is based on the implementation of Costello et al. which is published at [link](https://github.com/microsoft/vOW4SIKE).

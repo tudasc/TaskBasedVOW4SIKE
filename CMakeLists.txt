@@ -103,5 +103,5 @@ target_include_directories(test_vOW_SIKE_128 PRIVATE
             ${CMAKE_CURRENT_SOURCE_DIR}/libs/P128/include
             ${CMAKE_CURRENT_SOURCE_DIR}/libs/aes/include
             ${CMAKE_CURRENT_SOURCE_DIR}/libs/sha3/include
-            ${CMAKE_CURRENT_SOURCE_DIR}/libs/xxhash
+            ${CMAKE_CURRENT_SOURCE_DIR}/libs/xxHash
 )

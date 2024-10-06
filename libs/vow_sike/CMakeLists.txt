@@ -80,7 +80,7 @@ add_definitions(-D_ADX_)
 
 find_library(SIDH_LIB sidh HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../P128/build)
 find_library(AES_LIB aes HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../aes/build)
-find_library(XXHASH_LIB xxhash HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../xxhash)
+find_library(XXHASH_LIB xxhash HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../xxHash)
 find_library(SHA3_LIB sha3 HINTS ${CMAKE_CURRENT_SOURCE_DIR}/../sha3/build)
 
 target_compile_options(vow_sike PUBLIC 
@@ -91,7 +91,7 @@ target_link_libraries(vow_sike PRIVATE
 ${XXHASH_LIB} ${AES_LIB} ${SIDH_LIB} ${SHA3_LIB})
 
 target_include_directories(vow_sike 
-    PUBLIC include ${CMAKE_CURRENT_SOURCE_DIR}/../P128/include ${CMAKE_CURRENT_SOURCE_DIR}/../aes/include ${CMAKE_CURRENT_SOURCE_DIR}/../xxhash/
+    PUBLIC include ${CMAKE_CURRENT_SOURCE_DIR}/../P128/include ${CMAKE_CURRENT_SOURCE_DIR}/../aes/include ${CMAKE_CURRENT_SOURCE_DIR}/../xxHash/
 )
                        
 
